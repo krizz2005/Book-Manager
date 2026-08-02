@@ -29,7 +29,10 @@ const cardVariants: Variants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.35, ease: 'easeOut' },
+    transition: { 
+      duration: 0.35, 
+      ease: 'easeOut' as const // <--- explicit const assertion fixes the type error
+    },
   },
   exit: {
     opacity: 0,
