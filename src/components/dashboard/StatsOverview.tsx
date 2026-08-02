@@ -16,7 +16,7 @@ const containerVariants = {
       staggerChildren: 0.1,
     },
   },
-};
+}as const;
 
 const cardVariants = {
   hidden: { opacity: 0, y: 15 },
