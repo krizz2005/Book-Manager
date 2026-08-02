@@ -31,7 +31,7 @@ const itemVariants = {
     scale: 0.95,
     transition: { duration: 0.2 },
   },
-};
+} as const;
 
 export default function DashboardPage() {
   const [books, setBooks] = useState<BookType[]>([]);
