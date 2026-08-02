@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { ArrowRight, Sparkles, BookOpen, Bookmark } from 'lucide-react';
-
+import { Variants } from 'framer-motion';
 interface BookType {
   _id: string;
   title: string;
