@@ -14,7 +14,7 @@ interface BookGridProps {
   onStatusChange: (id: string, status: BookStatus) => void;
 }
 
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -22,9 +22,9 @@ const containerVariants = {
       staggerChildren: 0.07,
     },
   },
-}as const;
+};
 
-const cardVariants = {
+const cardVariants: Variants = {
   hidden: { opacity: 0, y: 15 },
   visible: {
     opacity: 1,
@@ -36,7 +36,7 @@ const cardVariants = {
     scale: 0.95,
     transition: { duration: 0.2 },
   },
-}as const;
+};
 
 export default function BookGrid({
   books,
