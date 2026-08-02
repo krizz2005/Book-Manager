@@ -2,14 +2,14 @@
 
 import { useState, useEffect, useCallback } from 'react';
 import { Plus, Search, BookMarked, LogOut, Library } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, Variants } from 'framer-motion';
 import StatsOverview from '@/components/dashboard/StatsOverview';
 import BookCard from '@/components/books/BookCard';
 import BookModal from '@/components/books/BookModal';
 import { BookType, BookStats, BookStatus } from '@/types';
 
 // Animation Variants for Staggered Grid & Elements
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -19,7 +19,7 @@ const containerVariants = {
   },
 };
 
-const itemVariants = {
+const itemVariants: Variants = {
   hidden: { opacity: 0, y: 15 },
   visible: {
     opacity: 1,
@@ -31,7 +31,7 @@ const itemVariants = {
     scale: 0.95,
     transition: { duration: 0.2 },
   },
-} as const;
+};
 
 export default function DashboardPage() {
   const [books, setBooks] = useState<BookType[]>([]);
