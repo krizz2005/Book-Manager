@@ -25,7 +25,7 @@ const cardVariants = {
     y: 0,
     transition: { duration: 0.4, ease: 'easeOut' },
   },
-};
+}as const;
 
 export default function StatsOverview({ stats }: StatsProps) {
   return (

@@ -36,7 +36,7 @@ const cardVariants = {
     scale: 0.95,
     transition: { duration: 0.2 },
   },
-};
+}as const;
 
 export default function BookGrid({
   books,
