@@ -1,7 +1,7 @@
 'use client';
 
 import { BookOpen, BookmarkCheck, BookMarked, Sparkles } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import { BookStats } from '@/types';
 
 interface StatsProps {

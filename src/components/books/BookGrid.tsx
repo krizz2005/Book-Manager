@@ -1,7 +1,7 @@
 'use client';
 
 import { BookMarked } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, Variants } from 'framer-motion';
 import BookCard from './BookCard';
 import { BookType, BookStatus } from '@/types';
 
